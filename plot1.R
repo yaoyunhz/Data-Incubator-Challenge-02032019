@@ -1,4 +1,4 @@
-#plot2
+#plot1
 library(lubridate)
 
 data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";")
@@ -14,5 +14,5 @@ with(data,
      plot(day, Global_active_power, 
           type = "l", ylab = "Global Active Power (kilowatts)"))
 
-dev.copy(png, file = "plot2.png", width = 480, height = 480)
+dev.copy(png, file = "plot1.png", width = 480, height = 480)
 dev.off()
