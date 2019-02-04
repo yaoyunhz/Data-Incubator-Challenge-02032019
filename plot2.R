@@ -1,4 +1,4 @@
-#plot3
+#plot2
 library(lubridate)
 
 data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";")
@@ -16,5 +16,5 @@ with(data, lines(day, Sub_metering_3, col = "blue"))
 legend("topright", lty = 1, col = c("black", "red", "blue"), cex = 0.7,
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
-dev.copy(png, file = "plot3.png", width = 480, height = 480)
+dev.copy(png, file = "plot2.png", width = 480, height = 480)
 dev.off()
